@@ -1,13 +1,15 @@
-function parseXEC(txt){
+function parseXEC(txt,pw){
     let enc=false;
     txt.split(".").length===1?enc=true:txt.split(".").slice(1).forEach((x)=>{if(isNaN(parseInt(x))){enc=true}});
-    return enc?encodeXEC(txt):decodeXEC(txt);
+    return enc?encodeXEC(txt,pw):decodeXEC(txt);
 }
-function encodeXEC(txt) {
+function encodeXEC(txt,pw) {
     let out="";
+    pw=pw.split("").map((x)=>x.charCodeAt(0)).reduce((p,x)=>p+x,0);
     txt.split("").map((x)=>{return x.charCodeAt(0)}).forEach((x)=>{
+        x+=pw;
         let n1=Math.floor(Math.random()*x/3*2)+1;
-        let n2=Math.floor(Math.random()*(x-n1)/2)+1;
+        let n2=Math.floor(Math.random()*(x-n1))+1;
         let n3=x-n1-n2;
         out+=`.${n1}.${n2}.${n3}`;
     });

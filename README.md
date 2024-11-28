@@ -3,7 +3,7 @@
 A lightweight pure javascript library for encoding and decoding the XECryption format.
 
 ### 1337 Features:
-- **Only 656 bytets!**
+- **Only 693 bytets!**
 - **No error handling!**
 
 **CAN ONLY DECODE WHEN A SPACE ( ) IS THE MOST COMMON CHARACTER**
@@ -16,7 +16,7 @@ A lightweight pure javascript library for encoding and decoding the XECryption f
 
 > example.html contains a demo
 
-Import XECryption.js (1089 bytes) or XECryption.min.js (656 bytes)
+Import XECryption.js (1181 bytes) or XECryption.min.js (693 bytes)
 
 ```
 Using a CDN:
