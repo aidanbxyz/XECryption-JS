@@ -5,12 +5,9 @@ A lightweight pure javascript library for encoding and decoding the XECryption f
 ### 1337 Features:
 - **Only 693 bytets!**
 - **No error handling!**
+- **Minified by hand!**
 
 **CAN ONLY DECODE WHEN A SPACE ( ) IS THE MOST COMMON CHARACTER**
-
-## TODO
-
-- Add character+password sum functionality to encodeXEC()
 
 ## Usage
 
