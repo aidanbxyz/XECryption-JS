@@ -17,7 +17,7 @@ Import XECryption.js (1181 bytes) or XECryption.min.js (693 bytes)
 
 ```
 Using a CDN:
-<script src="https://cdn.jsdelivr.net/gh/aidanbxyz/XECryption-JS@main/XECryption.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aidanbxyz/XECryption-JS/XECryption.min.js"></script>
 
 OR
 
