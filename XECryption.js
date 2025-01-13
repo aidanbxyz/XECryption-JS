@@ -1,4 +1,4 @@
-function parseXEC(txt,pw,common){
+function parseXEC(txt,pw="",common=""){
     let enc=false;
     txt.split(".").length==1?enc=true:txt.split(".").slice(1).forEach((x)=>{if(isNaN(parseInt(x))){enc=true}});
     return enc?encodeXEC(txt,pw):decodeXEC(txt,common);
