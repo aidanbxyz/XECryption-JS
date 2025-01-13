@@ -1,7 +1,7 @@
-function parseXEC(txt,pw){
+function parseXEC(txt,pw,common){
     let enc=false;
-    txt.split(".").length===1?enc=true:txt.split(".").slice(1).forEach((x)=>{if(isNaN(parseInt(x))){enc=true}});
-    return enc?encodeXEC(txt,pw):decodeXEC(txt);
+    txt.split(".").length==1?enc=true:txt.split(".").slice(1).forEach((x)=>{if(isNaN(parseInt(x))){enc=true}});
+    return enc?encodeXEC(txt,pw):decodeXEC(txt,common);
 }
 function encodeXEC(txt,pw) {
     let out="";
@@ -15,7 +15,7 @@ function encodeXEC(txt,pw) {
     });
     return out;
 }
-function decodeXEC(txt) {
+function decodeXEC(txt,common="") {
     let raw=txt.split(".").slice(1).map((x)=>{return parseInt(x)});
     if (raw.length%3!==0){return}
     let sums=[];
@@ -30,6 +30,6 @@ function decodeXEC(txt) {
             commonchar=x;
         }
     });
-    sums=sums.map((x)=>{return x-commonchar+32});
+    sums=sums.map((x)=>{return x-commonchar+common.charCodeAt(0)});
     return String.fromCharCode(...sums);
 }
