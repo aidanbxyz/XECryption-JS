@@ -3,7 +3,7 @@ function parseXEC(txt,pw="",common=""){
     txt.split(".").length==1?enc=true:txt.split(".").slice(1).forEach((x)=>{if(isNaN(parseInt(x))){enc=true}});
     return enc?encodeXEC(txt,pw):decodeXEC(txt,common);
 }
-function encodeXEC(txt,pw) {
+function encodeXEC(txt,pw="") {
     let out="";
     pw=pw.split("").map((x)=>x.charCodeAt(0)).reduce((p,x)=>p+x,0);
     txt.split("").map((x)=>{return x.charCodeAt(0)}).forEach((x)=>{
