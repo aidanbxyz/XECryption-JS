@@ -1,5 +1,5 @@
-<textarea style="width:100%;height:45%" id="text" placeholder="Super Secret Message&#10;(Space must be most common character)" oninput="document.getElementById('out').innerHTML=parseXEC(this.value,document.getElementById('pw').value,document.getElementById('common').value)"></textarea>
-<input style="width:100%" id="pw" placeholder="Password (Encrypting Only)" oninput="document.getElementById('out').innerHTML=parseXEC(document.getElementById('text').value,this.value,document.getElementById('common').value)">
-<input style="width:100%" id="common" placeholder="Common Character (Decrypting Only, Defaults to SPACE)" maxlength="1" oninput="document.getElementById('out').innerHTML=parseXEC(document.getElementById('text').value,document.getElementById('pw').value,this.value)">
+<textarea style="width:100%;height:45%" id="text" placeholder="Super Secret Message&#10;(Space must be most common character)" oninput="document.getElementById('out').innerHTML=parseXEC(this.value,document.getElementById('pw').value,document.getElementById('common').value||' ')"></textarea>
+<input style="width:100%" id="pw" placeholder="Password (Encrypting Only)" oninput="document.getElementById('out').innerHTML=parseXEC(document.getElementById('text').value,this.value,document.getElementById('common').value||' ')">
+<input style="width:100%" id="common" placeholder="Common Character (Decrypting Only, Defaults to SPACE)" maxlength="1" oninput="document.getElementById('out').innerHTML=parseXEC(document.getElementById('text').value,document.getElementById('pw').value,this.value||' ')">
 <pre style="white-space:pre-wrap;overflow-wrap:break-word;width:100%;height:45%" id="out"></pre>
 <script src="XECryption.min.js"></script>
