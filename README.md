@@ -3,7 +3,7 @@
 A lightweight pure javascript library for encoding and decoding the XECryption format.
 
 ### 1337 Features:
-- **Only 723 bytes!**
+- **Only 683 bytes!**
 - **No error handling!?**
 - **Minified by hand!**
 
