@@ -9,7 +9,7 @@ A lightweight pure javascript library for encoding and decoding the XECryption f
 
 ## Usage
 
-> example.html contains a demo
+> example.html contains a demo, or go to [awoo.foo/xec](https://awoo.foo/xec/)
 
 Import XECryption.min.js
 
