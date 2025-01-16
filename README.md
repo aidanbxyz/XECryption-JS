@@ -11,7 +11,7 @@ A lightweight pure javascript library for encoding and decoding the XECryption f
 
 > example.html contains a demo
 
-Import XECryption.js or XECryption.min.js
+Import XECryption.min.js
 
 ```
 Using a CDN:
