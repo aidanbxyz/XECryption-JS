@@ -15,7 +15,7 @@ Import XECryption.min.js
 
 ```
 Using a CDN:
-<script src="https://cdn.jsdelivr.net/gh/aidanbxyz/XECryption-JS/XECryption.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/wuf-sh/XECryption-JS/XECryption.min.js"></script>
 
 OR
 
